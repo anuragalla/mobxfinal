@@ -12,7 +12,7 @@ import {observer} from 'mobx-react/native';
 import Drawer from './components/SideDrawer';
 import PageOne from './components/PageOne';
 // import AppBar from './components/AppBar'
-import NavBar from 'react-native-router-flux/src/NavBar';
+/*import NavBar from 'react-native-router-flux/src/NavBar';*/
 // view and model for Counter scene
 //import Counter from './components/Counter';
 import TopTabBar from './components/TopTabBar';
@@ -43,7 +43,7 @@ class App extends Component{
 		  		  <View style={styles.statusbar} />
 		  	 	 {/*<View style={styles.appbar}></View>*/}
 		  		
-		  <Router store={store} titleStyle={{color:'#fff'}} navigationBarStyle={{ backgroundColor: '#2196f3' }}>
+		  <Router store={store} titleStyle={{color:'#fff'}} hideNavBar={true} navigationBarStyle={{ backgroundColor: '#2196f3' }}>
 		  	{/*<Scene key="drawer" component={Drawer} open={false} initial={true}>*/}
 		  	 {/*<Scene key="main" navBar={NavBar} >*/}
 		    	<Scene   key="pageOne" component={TopTabBar}  title="Home" />
